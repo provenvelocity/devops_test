@@ -40,7 +40,7 @@ Simply run the molecule test in debug and you will see that each of the Environm
 This Needs a new issue opened up but since they keep getting closed I have not opened it yet.
 
 ```
- molecule test
+ molecule --debug test
 ```
 
 ### Role Issue 
