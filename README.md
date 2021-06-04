@@ -47,4 +47,11 @@ again simply run the molecule test and you will see that the .cache folder is ma
 https://github.com/ansible-community/molecule/issues/3131
 
 
+###Resouces Folder not working on all steps. (Sharing Across Scenarios_)
+
+branch: resource_folder_issue
+
+The documentation states that the Scenarios should be able to share resources using this folder structure. This does not work for converge the provition code is missing the code.Again this comes down to much of the code is duplicated across Scenarios and should be moved to base to have a common library to fork with. 
+
+I have other issue but intl we get a working relation ship and my bugs are not closed im not going to outline them yet in this repo. 
 
