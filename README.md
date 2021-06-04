@@ -59,7 +59,7 @@ https://github.com/ansible-community/molecule/issues/3131
 
 branch: resource_folder_issue
 
-The documentation states that the Scenarios should be able to share resources using this folder structure. This does not work for converge the provition code is missing the code.Again this comes down to much of the code is duplicated across Scenarios and should be moved to base to have a common library to fork with. 
+The documentation states that the Scenarios should be able to share resources using this folder structure. This does not work for converge the provision code is missing the code.Again this comes down to much of the code is duplicated across Scenarios and should be moved to base to have a common library to fork with. 
 
 ```
  molecule test
