@@ -31,4 +31,6 @@ https://github.com/ansible/ansible/blob/2cbfd1e350cbe1ca195d33306b5a9628667ddda8
 
 ###to reproduce the Molecule ENV issue 
 
-Simply run the molecule test in debug and you will see that each of the Environments 
+ 
+
+###
