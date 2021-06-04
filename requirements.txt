@@ -1,0 +1,11 @@
+ansible
+docker
+molecule
+molecule-docker
+molecule-podman
+molecule-vagrant
+python-vagrant
+pytest
+pytest-testinfra
+yamllint
+flake8

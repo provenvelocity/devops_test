@@ -1,0 +1,10 @@
+---
+# - name: Converge
+#   hosts: all
+#   collections:
+#     - nginxinc.nginx_core
+#   roles:
+#     - role: nginx
+    
+- import_playbook: devops.test.main
+

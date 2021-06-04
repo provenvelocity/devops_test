@@ -1,0 +1,6 @@
+---
+roles: 
+  
+collections:
+  - name: nginxinc.nginx_core
+    version: 0.3.0

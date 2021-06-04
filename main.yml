@@ -1,0 +1,7 @@
+---
+- name: devops.test.example
+  hosts: all
+  collections:
+    - nginxinc.nginx_core
+  roles:
+    - role: nginx

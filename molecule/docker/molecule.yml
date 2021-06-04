@@ -1,0 +1,35 @@
+---
+dependency:
+  name: galaxy
+  options:
+    role-file: ./requirements.yml  
+    requirements-file: ./requirements.yml
+    #collections-path: ./.cache
+    #roles-path: ./.cache/roles
+driver:
+  name: docker
+lint: |
+  set -e
+  yamllint .
+  ansible-lint
+  flake8
+platforms:
+  - name: instance
+    image: centos7
+provisioner:
+  name: ansible
+  config_options:
+    defaults:
+      timeout: 30
+      system_warinings: false
+verifier:
+  name: ansible
+# verifier:
+#   name: testinfra
+#   directory: ../../tests
+#   options:
+#     # Add a -v so you see the individual test names,
+#     # particularly useful with parameterized tests
+#     v: true
+#   lint:
+#     name: flake8

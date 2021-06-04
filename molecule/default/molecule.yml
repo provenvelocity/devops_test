@@ -1,0 +1,43 @@
+---
+dependency:
+  name: galaxy
+  options:
+    role-file: ./requirements.yml
+    requirements-file: ./requirements.yml
+    #collections-path: ./.cache/collections
+    #roles-path: ./.cache/roles
+driver:
+  name: vagrant
+lint: |
+  set -e
+  env | sort | grep _
+  yamllint .
+  ansible-lint
+  flake8
+platforms:
+  - name: instance
+    box: rhel7-vb6-16
+    box_url: http://artifactory-staging.appl.kp.org:8082/artifactory/api/vagrant/vagrant-local/rhel7-vb6-16
+provisioner:
+  name: ansible
+  options:
+    v: true
+  config_options:
+    defaults:
+      timeout: 30
+      system_warinings: false
+      #collections-path: ./.cache/collections
+      #roles-path: ./.cache/roles
+    env:
+      #ANSIBLE_COLLECTIONS_PATH: ./.cache/collections
+verifier:
+  name: ansible
+# verifier:
+#   name: testinfra
+#   directory: ../../tests/
+#   options:
+#     # Add a -v so you see the individual test names,
+#     # particularly useful with parameterized tests
+#     v: true
+#   lint:
+#     name: flake8
