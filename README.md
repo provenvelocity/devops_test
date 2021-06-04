@@ -1,16 +1,15 @@
 # Ansible Collection - devops_test
 
-Documentation for the collection.
+Issues in molecule 
 
-
-###Setup
+### Setup
 python3 -m venv ~/.pv_devops/pv_devops_venv
 source ~/.pv_devops/pv_devops_venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements_withlock.txt
 
 
-###Clean Environment
+### Clean Environment
 
 I had to do this multible time because molecule was not changing even when i changed the file it was reporting the old file deleted this and it all worked.  Have not found how to reproduce
 
@@ -19,7 +18,7 @@ rm -rf ~/.cache/collections/
 rm -rf ~/.cache/roles/
 rm -rf ~/.cache/ansible-lint/
 
-###to reproduce the import-playbook issue. 
+### To reproduce the import-playbook issue. 
 
 This looks to be an issue with this code... It does not see the playbook in the FQCN
 
@@ -29,7 +28,7 @@ https://github.com/ansible/ansible/blob/2cbfd1e350cbe1ca195d33306b5a9628667ddda8
  molecule converge
 ```
 
-###to reproduce the Molecule ENV issue 
+### To reproduce the Molecule ENV issue 
 
 branch: env_issue 
 
@@ -41,7 +40,7 @@ This Needs a new issue opened up but since they keep getting closed I have not o
  molecule test
 ```
 
-###Role Issue 
+### Role Issue 
 
 branch: role_folder_issue 
 
@@ -53,7 +52,7 @@ https://github.com/ansible-community/molecule/issues/3131
  molecule test
 ```
 
-###Resouces Folder not working on all steps. (Sharing Across Scenarios_)
+### Resouces Folder not working on all steps. (Sharing Across Scenarios_)
 
 branch: resource_folder_issue
 
@@ -64,5 +63,5 @@ The documentation states that the Scenarios should be able to share resources us
 ```
 
 
-###More exsample to come
+### More exsample to come
 I have other issue but intl we get a working relation ship and my bugs are not closed im not going to outline them yet in this repo. 
