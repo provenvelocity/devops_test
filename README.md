@@ -34,3 +34,17 @@ https://github.com/ansible/ansible/blob/2cbfd1e350cbe1ca195d33306b5a9628667ddda8
 branch: env_issue 
 
 Simply run the molecule test in debug and you will see that each of the Environments in deploy lint provision all have different ANSIBLE_COLLECTIONS_PATH setting even if i try to override either in the .env or in the molecule file or even in the user level env.
+
+This Needs a new issue opened up but since they keep getting closed I have not opened it yet.
+
+
+###Role Issue 
+
+branch: role_folder_issue 
+
+again simply run the molecule test and you will see that the .cache folder is made in the molecule default folder but all other ./ refernces are in the root of the project where the commadn is run. This shows that the role is put in the wrong location in the ticket I outline the code at fault. 
+ 
+https://github.com/ansible-community/molecule/issues/3131
+
+
+

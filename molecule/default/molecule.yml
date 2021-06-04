@@ -5,7 +5,7 @@ dependency:
     role-file: ./requirements.yml
     requirements-file: ./requirements.yml
     #collections-path: ./.cache/collections
-    #roles-path: ./.cache/roles
+    roles-path: ./.cache/roles
 driver:
   name: vagrant
 lint: |
@@ -25,10 +25,10 @@ provisioner:
     defaults:
       timeout: 30
       system_warinings: false
-      collections-path: ./.cache/collections
-      #roles-path: ./.cache/roles
-    env:
-      ANSIBLE_COLLECTIONS_PATH: ./.cache/collections
+      #collections-path: ./.cache/collections
+      roles-path: ./.cache/roles
+    #env:
+      #ANSIBLE_COLLECTIONS_PATH: ./.cache/collections
 verifier:
   name: ansible
 # verifier:
