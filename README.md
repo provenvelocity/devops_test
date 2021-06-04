@@ -2,6 +2,8 @@
 
 Issues in molecule 
 
+https://github.com/ansible-community/molecule/discussions/3140
+
 ### Setup
 ```
 python3 -m venv ~/.pv_devops/pv_devops_venv
