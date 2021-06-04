@@ -19,4 +19,16 @@ rm -rf ~/.cache/collections/
 rm -rf ~/.cache/roles/
 rm -rf ~/.cache/ansible-lint/
 
+###to reproduce the import-playbook issue. 
 
+This looks to be an issue with this code... It does not see the playbook in the FQCN
+
+https://github.com/ansible/ansible/blob/2cbfd1e350cbe1ca195d33306b5a9628667ddda8/lib/ansible/playbook/playbook_include.py
+
+```
+ molecule converge
+```
+
+###to reproduce the Molecule ENV issue 
+
+Simply run the molecule test in debug and you will see that each of the Environments 
