@@ -28,7 +28,7 @@ provisioner:
       system_warinings: false
       #collections-path: ./.cache/collections
       #roles-path: ./.cache/roles
-    env:
+    #env:
       #ANSIBLE_COLLECTIONS_PATH: ./.cache/collections
 verifier:
   name: ansible

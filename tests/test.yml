@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - test
+
+- name: Include Shared Verify tasks
+  import_playbook: ../../tests/shared_tests.yml

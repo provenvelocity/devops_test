@@ -6,5 +6,5 @@
 #   roles:
 #     - role: nginx
     
-- import_playbook: devops.test.main
+- import_playbook: provenvelocity.devops_test.main
 
