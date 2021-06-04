@@ -1,14 +1,14 @@
 ---
-# - name: Converge
-#   hosts: all
-#   become: true
-#   collections:
-#     - nginxinc.nginx_core
-#   roles:
-#     - role: nginx
+- name: Converge
+  hosts: all
+  become: true
+  collections:
+    - nginxinc.nginx_core
+  roles:
+    - role: nginx
 
 #External Collections
-- import_playbook: nginxinc.nginx_core.playbooks.deploy-nginx.yml
+#- import_playbook: nginxinc.nginx_core.playbooks.deploy-nginx.yml
 #- import_playbook: nginxinc.nginx_core.playbooks.deploy-nginx
 #- import_playbook: nginxinc.nginx_core.deploy-nginx
 

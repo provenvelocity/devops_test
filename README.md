@@ -31,6 +31,6 @@ https://github.com/ansible/ansible/blob/2cbfd1e350cbe1ca195d33306b5a9628667ddda8
 
 ###to reproduce the Molecule ENV issue 
 
- 
+branch: env_issue 
 
-###
+Simply run the molecule test in debug and you will see that each of the Environments in deploy lint provision all have different ANSIBLE_COLLECTIONS_PATH setting even if i try to override either in the .env or in the molecule file or even in the user level env.
