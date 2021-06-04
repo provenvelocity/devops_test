@@ -6,5 +6,9 @@
 #   roles:
 #     - role: nginx
 
-- import_playbook: provenvelocity.devops_test.main
-
+- import_playbook: nginxinc.nginx_core.playbooks.deploy-nginx.yml
+# - import_playbook: provenvelocity.devops_test.main
+# - import_playbook: provenvelocity.devops_test.main.yml
+# - import_playbook: "provenvelocity.devops_test.main"
+# - import_playbook: "provenvelocity.devops_test.main.yml"
+# - import_playbook: "provenvelocity.devops_test.playbooks.main.yml"

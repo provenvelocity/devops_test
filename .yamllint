@@ -37,4 +37,3 @@ ignore: |
   samples/
   .cache
   plugins/ceph_ansible
-  local_env/

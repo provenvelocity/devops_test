@@ -16,8 +16,7 @@ lint: |
   flake8
 platforms:
   - name: instance
-    box: rhel7-vb6-16
-    box_url: http://artifactory-staging.appl.kp.org:8082/artifactory/api/vagrant/vagrant-local/rhel7-vb6-16
+    box: centos/8
 provisioner:
   name: ansible
   options:
