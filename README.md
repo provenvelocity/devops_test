@@ -29,6 +29,20 @@ https://github.com/ansible/ansible/issues/74917
 
 https://github.com/ansible/ansible/blob/2cbfd1e350cbe1ca195d33306b5a9628667ddda8/lib/ansible/playbook/playbook_include.py
 
+Tested all these formats:
+
+#External Collections
+- import_playbook: nginxinc.nginx_core.playbooks.deploy-nginx.yml
+- import_playbook: nginxinc.nginx_core.playbooks.deploy-nginx
+- import_playbook: nginxinc.nginx_core.deploy-nginx
+
+#Current Collection
+- import_playbook: provenvelocity.devops_test.main
+- import_playbook: provenvelocity.devops_test.main.yml
+- import_playbook: "provenvelocity.devops_test.main"
+- import_playbook: "provenvelocity.devops_test.main.yml"
+- import_playbook: "provenvelocity.devops_test.playbooks.main.yml"
+
 ```
  molecule converge
 ```
