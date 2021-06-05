@@ -25,6 +25,8 @@ rm -rf ~/.cache/ansible-lint/
 
 This looks to be an issue with this code... It does not see the playbook in the FQCN
 
+https://github.com/ansible/ansible/issues/74917
+
 https://github.com/ansible/ansible/blob/2cbfd1e350cbe1ca195d33306b5a9628667ddda8/lib/ansible/playbook/playbook_include.py
 
 ```
