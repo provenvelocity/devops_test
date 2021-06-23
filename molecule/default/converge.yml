@@ -18,4 +18,4 @@
 # - import_playbook: "provenvelocity.devops_test.main"
 # - import_playbook: "provenvelocity.devops_test.main.yml"
 - name: Include main playbook...
-  import_playbook: provenvelocity.devops_test.main.yml
+  import_playbook: provenvelocity.devops_test.palybooks.main.yml
