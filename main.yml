@@ -1,5 +1,5 @@
 ---
-- name: devops_test.example
+- name: devops_test.example1
   hosts: all
   collections:
     - nginxinc.nginx_core

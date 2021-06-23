@@ -1,11 +1,11 @@
 ---
-- name: Converge
-  hosts: all
-  become: true
-  collections:
-    - nginxinc.nginx_core
-  roles:
-    - role: nginx
+# - name: Converge
+#   hosts: all
+#   become: true
+#   collections:
+#     - nginxinc.nginx_core
+#   roles:
+#     - role: nginx
 
 #External Collections
 #- import_playbook: nginxinc.nginx_core.playbooks.deploy-nginx.yml
@@ -17,4 +17,5 @@
 # - import_playbook: provenvelocity.devops_test.main.yml
 # - import_playbook: "provenvelocity.devops_test.main"
 # - import_playbook: "provenvelocity.devops_test.main.yml"
-# - import_playbook: "provenvelocity.devops_test.playbooks.main.yml"
+- name: Include main playbook...
+  import_playbook: provenvelocity.devops_test.main.yml
